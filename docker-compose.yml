@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  securely:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=change_me_to_a_secure_random_string_in_production
+    volumes:
+      # Map the database.json to a persistent volume so bins are not lost on restart
+      - securely_data:/app
+volumes:
+  securely_data:
