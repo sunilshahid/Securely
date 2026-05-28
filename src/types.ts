@@ -9,11 +9,18 @@ export interface Bin {
   createdAt: string;
 }
 
+export interface SecurityLog {
+  id: string;
+  ip: string;
+  timestamp: string;
+}
+
 export interface AdminStats {
   totalBinsAllTime: number;
   activeBins: number;
   storageSize: number;
   serverUptime: number;
+  securityLogs: SecurityLog[];
 }
 
 export interface ApiKey {
@@ -22,4 +29,5 @@ export interface ApiKey {
   rateLimitQuota: number;
   isActive: boolean;
   createdAt: string;
+  requestCount?: number;
 }

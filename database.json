@@ -1,0 +1,14 @@
+{
+  "securityLogs": [],
+  "bins": [],
+  "admins": [
+    {
+      "username": "sunilshahid",
+      "passwordHash": "$2b$10$kvCBzgsnkcAnDU9Pqg27gOATIDw7as4tqhQOURx33GH86EMGS1CMS",
+      "totpEnabled": false,
+      "totpSecret": null,
+      "backupCodes": []
+    }
+  ],
+  "apiKeys": []
+}
